@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="h-screen w-full bg-zinc-900 flex justify-center px-10 py-10 text-white">
+        <form action="/update/<%= user.id %>" method="post">
+            <input class="px-2 py-2 outline-none bg-zinc-800 rounded-sm" type="name" placeholder="name" name="name" value="<%= user.name %>">
+            <input class="px-2 py-2 outline-none bg-zinc-800 rounded-sm" type="email" placeholder="email" name="email" value="<%= user.email %>">
+            <input class="px-2 py-2 outline-none bg-zinc-800 rounded-sm" type="text" placeholder="username" name="username" value="<%= user.username %>">
+            <input class="bg-yellow-500 rounded-sm px-2 py-2" id="submit" type="submit" value="update">
+            </form>
+    </div>
+</body>
+</html>
